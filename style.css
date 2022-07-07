@@ -12,6 +12,7 @@ img {
 span {
     width: 10%;
     font-size: 40px;
+    cursor: pointer;
 }
 
 #img-target {

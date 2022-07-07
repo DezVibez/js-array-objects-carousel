@@ -60,12 +60,57 @@ const imgTarget = document.getElementById("img-target")
 const nextButton = document.getElementById("Right")
 const previousButton = document.getElementById("Left")
 
-const imgSrc = images.forEach((url) => {
-    imgTarget.innerHTML = `<h3 class="text-center">${images[0].title}</h3>
-                            <img src = ${images[0].url} alt="${images[0].title}"
-                            <p class="text-center">${images[0].description}</p>`
+let index = 0
 
+imgTarget.innerHTML = `<h3 class="text-center">${images[index].title}</h3>
+            <img src = ${images[index].url} alt="${images[index].title}"
+            <p class="text-center">${images[index].description}</p>`
+
+
+const imgSrc = images.forEach((image,index) => {
+
+    console.log(images[index])
+            
+    
+
+    
+    nextButton.addEventListener("click",function(){
+
+        if (index === 4) {
+            index = 0}
+    
+        else index++;
+
+            imgTarget.innerHTML = `<h3 class="text-center">${images[index].title}</h3>
+            <img src = ${images[index].url} alt="${images[index].title}"
+            <p class="text-center">${images[index].description}</p>`
+            
+        })
+
+    previousButton.addEventListener("click",function(){
+
+        if (index === 0) {
+                index = 4}
+        
+        else index--;
+    
+            imgTarget.innerHTML = `<h3 class="text-center">${images[index].title}</h3>
+            <img src = ${images[index].url} alt="${images[index].title}"
+            <p class="text-center">${images[index].description}</p>`
+                
+            })
+
+    
+
+    
+    
+
+    
 })
+
+
+
+
 
 
 
