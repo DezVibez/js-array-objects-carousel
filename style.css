@@ -1,0 +1,16 @@
+
+
+img {
+    max-width: 75%;
+    margin: 0 10px;
+}
+
+.img-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+span {
+    width: 10%;
+    font-size: 40px;
+}
