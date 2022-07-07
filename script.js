@@ -52,5 +52,21 @@ const images = [
 //MILESTONE 1
 
 
+//targer per stampa
+const imgTarget = document.getElementById("img-target")
+
+//targer bottoni left e right
+
+const nextButton = document.getElementById("Right")
+const previousButton = document.getElementById("Left")
+
+const imgSrc = images.forEach((url) => {
+    imgTarget.innerHTML = `<h3 class="text-center">${images[0].title}</h3>
+                            <img src = ${images[0].url} alt="${images[0].title}"
+                            <p class="text-center">${images[0].description}</p>`
+
+})
+
+
 
 
