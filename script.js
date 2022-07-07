@@ -67,12 +67,13 @@ imgTarget.innerHTML = `<h3 class="text-center">${images[index].title}</h3>
             <p class="text-center">${images[index].description}</p>`
 
 
+//logica iterativa
+
 const imgSrc = images.forEach((image,index) => {
 
     console.log(images[index])
             
-    
-
+    //logica bottoni
     
     nextButton.addEventListener("click",function(){
 
